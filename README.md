@@ -73,7 +73,7 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 
 "-***" after Category ID indicates id number of exemplars.
 
-### Blending level
+### Blending level ID
 
 |Key|Blending operation|
 |-|-|
