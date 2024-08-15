@@ -5,8 +5,11 @@
 <a href="https://doi.org/10.1016/j.chb.2023.107811"><img src="https://img.shields.io/static/v1?label=Paper&message=10.1016/j.chb.2023.107811&color=orange" height=22.5></a>
 
 
-This repository was made for data sharing with requests.
-Here contains a code to calculate CLIP embeddings for input word (by [CLIP](https://github.com/openai/CLIP)) and the normalized CLIP embeddings of our original image stimuli calculated using <a href="zero-shot_prediction_batch.py">zero-shot_prediction_batch.py</a>.
+This repository was made for data sharing.
+It contains: 
+1) Code to calculate CLIP embeddings for an input word using <a href="zero-shot_prediction_batch.py">zero-shot_prediction_batch.py</a> ([CLIP](https://github.com/openai/CLIP)).
+2) A dataset of the normalized CLIP embeddings of our original image stimuli calculated using <a href="zero-shot_prediction_batch.py">zero-shot_prediction_batch.py</a>.
+3) Code to calculate the cosine similarity between word embeddings and image embeddings.
 
 <!-- ![sample images](sample.png "sample images") -->
 <div align="center">
