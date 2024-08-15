@@ -8,7 +8,7 @@
 
 
 This repository was made for data sharing with requests.
-Here contains a code to calculate CLIP embeddings (by [CLIP](https://github.com/openai/CLIP)) and the normalized embeddings of our original image stimuli calculated using `zero-shot_prediction_batch.py `.
+Here contains a code to calculate CLIP embeddings (by [CLIP](https://github.com/openai/CLIP)) and the normalized embeddings of our original image stimuli calculated using <a href="zero-shot_prediction_batch.py">zero-shot_prediction_batch.py</a>.
 
 <!-- ![sample images](sample.png "sample images") -->
 <div align="center">
