@@ -11,7 +11,9 @@ It contains:
 2) A dataset of the normalized CLIP embeddings of our image stimuli calculated using <a href="zero-shot_prediction_batch.py">zero-shot_prediction_batch.py</a>.
 3) Code to calculate the cosine similarity between word embeddings and image embeddings.
 
-## How to use data
+## Blending method
+
+Switch blending methods by selecting a path.
 
 <!-- ![sample images](sample.png "sample images") -->
 <div align="center">
