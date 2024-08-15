@@ -14,6 +14,7 @@ It contains:
 ## Blending methods
 
 Switch blending methods by selecting a path.
+e.g. If you want to chose "Morph" images, then load data from output/morph/clip_embedding_normalized.pt
 
 <!-- ![sample images](sample.png "sample images") -->
 <div align="center">
