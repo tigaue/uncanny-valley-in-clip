@@ -85,9 +85,9 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 
 |Key|Rotaion level|
 |-|-|
-|rot-060|-30 degrees from the front|
+|rot-060|30 degrees right from our front|
 |rot-090|Front|
-|rot-120|+30 degrees from the front|
+|rot-120|30 degrees left from our front|
 
 
 ## Acknowledgments
