@@ -59,9 +59,9 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 ```
 
 
-## Naming rules
+## Naming rules of images
 
-### Image cateogry
+### Category ID
 
 |Key|Object category|
 |-|-|
@@ -71,24 +71,24 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 |fg-004|Fruit and vegetable|
 |fg-005|Shoe|
 
-"-***" after object category means exampulars.
+"-***" after Category ID indicates id number of exemplars.
 
-### Amount of blending
+### Blending level
 
-|Key|Blending level|
+|Key|Blending operation|
 |-|-|
 |mor-000|No manipulation|
-|mor-005|Blending 75% of left image and 25% of right image|
-|mor-010|Intermediate level of blending|
-|mor-015|Blending 25% of left image and 75% of right image|
+|mor-005|Blending 75% of the image indicated on the left side with 25% of the image indicated on the right side|
+|mor-010|Blending 50% of the image indicated on the left side with 50% of the image indicated on the right side|
+|mor-015|Blending 25% of the image indicated on the left side with 75% of the image indicated on the right side|
 
-### Direction of objects
+### View angle ID 
 
-|Key|Rotaion level|
+|Key|View angle|
 |-|-|
-|rot-060|30 degrees right from our front|
-|rot-090|Front|
-|rot-120|30 degrees left from our front|
+|rot-060|30 degrees right from the front|
+|rot-090|The front view|
+|rot-120|30 degrees left from the front|
 
 
 ## Acknowledgments
