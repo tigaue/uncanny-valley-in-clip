@@ -82,9 +82,9 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 |Key|Blending operation|
 |-|-|
 |mor-000|No manipulation|
-|mor-005|Blending 75% of the image indicated on the left side with 25% of the image indicated on the right side|
-|mor-010|Blending 50% of the image indicated on the left side with 50% of the image indicated on the right side|
-|mor-015|Blending 25% of the image indicated on the left side with 75% of the image indicated on the right side|
+|mor-005|Blending 75% of the first image with 25% of the second image|
+|mor-010|Blending 50% of the first image with 50% of the second image|
+|mor-015|Blending 25% of the first image with 75% of the second image|
 
 ### View orientation ID 
 
