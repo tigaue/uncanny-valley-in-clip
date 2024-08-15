@@ -69,6 +69,7 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 |fg-003|Car|
 |fg-004|Fruit and vegetable|
 |fg-005|Shoe|
+
 "-***" after object category means exampulars.
 
 ### Amount of blending
