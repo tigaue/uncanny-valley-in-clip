@@ -4,7 +4,7 @@
 > 
 > Uncanny valley; Visual recognition; Artificial neural network; Sentiment analysis
 
-<a href="https://doi.org/10.1016/j.chb.2023.107811"><img src="https://img.shields.io/static/v1?label=Paper in Comput Hum Behav&message=10.1016/j.chb.2023.107811&color=orange" height=22.5></a>
+<a href="https://doi.org/10.1016/j.chb.2023.107811"><img src="https://img.shields.io/static/v1?label=Paper&message=10.1016/j.chb.2023.107811&color=orange" height=22.5></a>
 
 
 This repository was made for data sharing with requests.
