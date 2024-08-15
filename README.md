@@ -1,0 +1,112 @@
+# Signatures of the uncanny valley effect in an artificial neural network
+
+> Robots and computer graphics characters that resemble humans but are not perfectly human-like tend to evoke negative feelings in human observers, which is known as the "uncanny valley effect." In this study, we used a recent artificial neural network called Contrastive Language-Image Pre-training (CLIP) that learns visual concepts from natural language supervision as a visual sentiment model for humans to examine the semantic match between images with graded manipulation of human-likeness and words used in previous studies to describe the uncanny valley effect. Our results showed that CLIP estimated the matching of words of negative valence to be maximal at the midpoint of the transition from a human face to other objects, thereby indicating the signature of the uncanny valley effect. Our findings suggest that visual features characteristic to the conflicts of visual cues, particularly cues related to human faces, are associated with negative verbal expressions in our everyday experiences, and CLIP learned such an association from the training datasets. Our study is a step toward exploring how visual cues are related to human observers' sentiment using a novel psychological platform, that is, an artificial neural network.
+> 
+> Uncanny valley; Visual recognition; Artificial neural network; Sentiment analysis
+
+<a href="https://doi.org/10.1016/j.chb.2023.107811"><img src="https://img.shields.io/static/v1?label=Paper in Comput. Hum. Behav. &message=10.1016/j.chb.2023.107811&color=orange" height=22.5></a>
+
+
+This repository was made for data sharing with requests.
+Here contains a code to calculate CLIP embeddings (by [CLIP](https://github.com/openai/CLIP)) and the normalized embeddings of our original image stimuli calculated using `zero-shot_prediction_batch.py `.
+
+<!-- ![sample images](sample.png "sample images") -->
+<div align="center">
+    <img src="sample.png" width="50%" alt="sample">
+</div>
+
+<!-- 
+## Output of  demo code
+```bash
+(clip) $ python zero-shot_prediction_batch.py 
+loading images from img/morph/*.png...
+4100/4130
+calculating embeddings...
+saving...
+loading images from img/superimposition/*.png...
+4100/4130
+calculating embeddings...
+saving...
+loading images from img/juxtaposition/*.png...
+4100/4130
+calculating embeddings...
+saving...
+(clip) $ 
+```
+ -->
+
+## How to use data
+
+### Check image features calculated by CLIP
+
+```python
+>>> import torch
+>>> feats = torch.load("output/morph/clip_embedding_normalized.pt")
+>>> feats.keys()
+dict_keys(['fg-001-001_fg-001-001_mor-000_rot-000.png', 'fg-001-001_fg-001-001_mor-000_rot-030.png', 'fg-001-001_fg-001-001_mor-000_rot-060.png', ... ])
+>>> feats['fg-001-001_fg-001-001_mor-000_rot-000.png'].shape
+torch.Size([1, 512])
+```
+
+## Cosine similarity to words using image features of our original image stimuli
+
+```bash
+(clip) $ python calculate_cosine_similarity.py \
+            --path_feat="output/morph/clip_embedding_normalized.pt" \
+            --name_img="fg-001-001_fg-001-001_mor-000_rot-090.png" --c="living"
+tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
+```
+
+
+## Meanings of filenames
+
+### Image cateogry
+
+|Key|Object category|
+|-|-|
+|fg-001|Human|
+|fg-002|Macaque monkey|
+|fg-003|Car|
+|fg-004|Fruit & vegetable|
+|fg-005|Shoe|
+"-***" after object category means exampulars.
+
+### Amount of blending
+
+|Key|Blending level|
+|-|-|
+|mor-000|No manipulation|
+|mor-005|Blending 75% of left image and 25% of right image|
+|mor-010|Intermediate level of blending|
+|mor-015|Blending 25% of left image and 75% of right image|
+
+### Direction of objects
+```['rot-060', 'rot-090', 'rot-120']``` was used for the paper.
+
+|Key|Rotaion level|
+|-|-|
+|rot-000|Facing our right|
+|rot-030|-60 degrees from the front|
+|rot-060|-30 degrees from the front|
+|rot-090|Front|
+|rot-120|+30 degrees from the front|
+|rot-150|+60 degrees from the front|
+|rot-180|Facing our left|
+
+
+## Acknowledgments
+CLIP embeddings were calculated using [CLIP](https://github.com/openai/CLIP) developed by OpenAI.
+
+## Citation
+If you use the embeddings shared in this repository for your research, please cite the following works:
+```
+@article{igaue2023signatures,
+  title={Signatures of the uncanny valley effect in an artificial neural network},
+  author={Igaue, Takuya and Hayashi, Ryusuke},
+  journal={Computers in Human Behavior},
+  volume={146},
+  pages={107811},
+  year={2023},
+  publisher={Elsevier}
+}
+```
