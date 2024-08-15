@@ -40,7 +40,7 @@ saving...
 ```
  -->
 
-## How to use data
+## How to use our data and codes
 
 ### Loading a dataset of the normalized CLIP embeddings of our image stimuli
 
@@ -86,9 +86,9 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 |mor-010|Blending 50% of the image indicated on the left side with 50% of the image indicated on the right side|
 |mor-015|Blending 25% of the image indicated on the left side with 75% of the image indicated on the right side|
 
-### View angle ID 
+### View orientation ID 
 
-|Key|View angle|
+|Key|View orientation|
 |-|-|
 |rot-060|30 degrees right from the front|
 |rot-090|The front view|
