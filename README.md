@@ -82,7 +82,6 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 |mor-015|Blending 25% of left image and 75% of right image|
 
 ### Direction of objects
-```['rot-060', 'rot-090', 'rot-120']``` were used for the paper.
 
 |Key|Rotaion level|
 |-|-|
@@ -94,6 +93,7 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 |rot-150|+60 degrees from the front|
 |rot-180|Facing our left|
 
+```['rot-060', 'rot-090', 'rot-120']``` were used for the paper.
 
 ## Acknowledgments
 CLIP embeddings were calculated using [CLIP](https://github.com/openai/CLIP) developed by OpenAI.
