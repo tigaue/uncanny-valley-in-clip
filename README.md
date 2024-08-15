@@ -46,7 +46,7 @@ dict_keys(['fg-001-001_fg-001-001_mor-000_rot-000.png', 'fg-001-001_fg-001-001_m
 torch.Size([1, 512])
 ```
 
-### Cosine similarity to words using image features of our original image stimuli
+### Cosine similarity to words using normalized image features of our original image stimuli
 
 ```bash
 (clip) $ python calculate_cosine_similarity.py \
