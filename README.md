@@ -48,7 +48,7 @@ dict_keys(['fg-001-001_fg-001-001_mor-000_rot-000.png', 'fg-001-001_fg-001-001_m
 torch.Size([1, 512])
 ```
 
-## Cosine similarity to words using image features of our original image stimuli
+### Cosine similarity to words using image features of our original image stimuli
 
 ```bash
 (clip) $ python calculate_cosine_similarity.py \
@@ -58,7 +58,7 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 ```
 
 
-## Meanings of filenames
+## Naming rules
 
 ### Image cateogry
 
@@ -67,7 +67,7 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 |fg-001|Human|
 |fg-002|Macaque monkey|
 |fg-003|Car|
-|fg-004|Fruit & vegetable|
+|fg-004|Fruit and vegetable|
 |fg-005|Shoe|
 "-***" after object category means exampulars.
 
@@ -81,7 +81,7 @@ tensor([[0.2350]], device='cuda:0', dtype=torch.float16)
 |mor-015|Blending 25% of left image and 75% of right image|
 
 ### Direction of objects
-```['rot-060', 'rot-090', 'rot-120']``` was used for the paper.
+```['rot-060', 'rot-090', 'rot-120']``` were used for the paper.
 
 |Key|Rotaion level|
 |-|-|
