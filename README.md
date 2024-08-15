@@ -8,7 +8,7 @@
 This repository was made for data sharing.
 It contains: 
 1) Code to calculate CLIP embeddings for an input word using <a href="zero-shot_prediction_batch.py">zero-shot_prediction_batch.py</a> ([CLIP](https://github.com/openai/CLIP)).
-2) A dataset of the normalized CLIP embeddings of our original image stimuli calculated using <a href="zero-shot_prediction_batch.py">zero-shot_prediction_batch.py</a>.
+2) A dataset of the normalized CLIP embeddings of our image stimuli calculated using <a href="zero-shot_prediction_batch.py">zero-shot_prediction_batch.py</a>.
 3) Code to calculate the cosine similarity between word embeddings and image embeddings.
 
 <!-- ![sample images](sample.png "sample images") -->
@@ -38,7 +38,7 @@ saving...
 
 ## How to use data
 
-### Check image features calculated by CLIP
+### Loading a dataset of the normalized CLIP embeddings of our image stimuli
 
 ```python
 >>> import torch
@@ -49,7 +49,7 @@ dict_keys(['fg-001-001_fg-001-001_mor-000_rot-000.png', 'fg-001-001_fg-001-001_m
 torch.Size([1, 512])
 ```
 
-### Cosine similarity to words using normalized image features of our original image stimuli
+### Calculating cosine similarity between the CLIP embedding of a specified word and the normalized CLIP embedding of a specified image
 
 ```bash
 (clip) $ python calculate_cosine_similarity.py \
