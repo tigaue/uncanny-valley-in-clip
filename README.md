@@ -5,7 +5,9 @@
 <a href="https://doi.org/10.1016/j.chb.2023.107811"><img src="https://img.shields.io/static/v1?label=Paper&message=10.1016/j.chb.2023.107811&color=orange" height=22.5></a>
 
 
-This repository is for data sharing.
+This repository is for data sharing. Please cite our paper if you use the contents of this repository in your research.
+
+
 It contains: 
 1) Code to calculate CLIP embeddings for an input word using [CLIP](https://github.com/openai/CLIP).
 2) A dataset of the normalized CLIP embeddings of our image stimuli calculated using <a href="zero-shot_prediction_batch.py">zero-shot_prediction_batch.py</a>.
