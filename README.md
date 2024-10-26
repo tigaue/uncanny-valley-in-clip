@@ -105,7 +105,7 @@ CLIP embeddings were calculated using [CLIP](https://github.com/openai/CLIP) dev
 ## Citation
 If you use the embeddings shared in this repository for your research, please cite the following works:
 ```
-@article{igaue2023signatures,
+@article{igaue2023uvinann,
   title={Signatures of the uncanny valley effect in an artificial neural network},
   author={Igaue, Takuya and Hayashi, Ryusuke},
   journal={Computers in Human Behavior},
