@@ -21,7 +21,7 @@ e.g., If you want to chose "Morph" images, then load data from output/morph/clip
 
 <!-- ![sample images](sample.png "sample images") -->
 <div align="center">
-    <img src="sample.png" alt="sample">
+    <img src="sample.png" width="80%" alt="sample">
 </div>
 
 <!-- 
